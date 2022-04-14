@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Juego de Dados</title>
+        <script type="text/javascript" src="dados.js"></script>
+ <!--solo para diseñar--><style>
+            h1 {
+                text-align: center;
+                font-family: Arial Black;
+                font-weight: bold;
+                font-size: 60px;
+                color: rgb(255, 6, 6);
+                text-shadow: 0 5px 0 rgb(255, 166, 0), 0 8px;
+            }
+
+            h2 {
+                text-align: center;
+                font-family: Arial;
+                font-size: 30px;
+                color: #1278BF;
+                text-shadow: 0px 0px 9px #508ad3;
+            }
+
+            h3 {
+                text-align: center;
+                font-family: Comic Sans MS;
+                font-weight: bold;
+                font-size: 30px;
+                color: #ff0195;
+                text-shadow: -1px 0 #414D68, 0 1px;
+            }
+
+            button {
+                background-color: #000000; color: rgb(255, 255, 255);
+            }
+
+            input{
+                background-color: #ff008c;
+                
+            }
+
+            body {
+                height: 800px;
+                background-image: url("https://images.freejpg.com.ar/900/3011/mars-planet-F100030543.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                }
+        </style>
+        <link rel="shortcut icon" href="dados.png";>
+    </head>
+    <body align="center">
+        <br>
+         <h1> Juego de Dados </h1>
+    <h2>Escribe un numero del 1 al 6</h2>
+    <input type="number" id="numero"> <!-- para insertar el numero-->
+    <button id="button" onclick="rodar()">Rodar</button> <!--tocar el boton-->
+    <br><br>
+    <div>
+        <h3> <span id="span"> Ruedalo</span></h3><br><br> <!--el mensaje que nos dice si adivino o no-->
+        <span id="span2"> </span>
+    </div>
+    </body>
+</html>
